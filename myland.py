@@ -9,6 +9,13 @@ haws = turtle.Turtle()
 sky = turtle.Turtle()
 haws = turtle.Turtle()
 
+geras.speed(.5)
+geras2.speed(.5)
+flawer.speed(.5)
+haws.speed(.5)
+sky.speed(.5)
+haws.speed(.5)
+
 def gera():
     geras.color("green")
     geras.begin_fill()
@@ -34,7 +41,7 @@ def flawers():
     flawer.color("Goldenrod")
     flawer.penup()
     flawer.right(90)
-    flawer.forward(80)
+    flawer.forward(90)
     flawer.right(90)
     flawer.forward(80)
     flawer.right(180)
@@ -72,13 +79,28 @@ def Haws():
     haws.right(-90)
     haws.forward(230)
     haws.end_fill()
+    haws.begin_fill()
+    haws.color("Red")
+    haws.forward(100)
+    haws.right(-90)
+    haws.forward(110)
+    haws.right(-90)
+    haws.forward(100)
+    haws.end_fill()
+    haws.color("Medium Violet Red")
+    haws.right(-90)
+    haws.forward(110)
+    haws.right(-45)
+    haws.forward(70)
+
 
 
 
 Haws()
 gera()
 flawers()
-flawer.goto(90, -120)
+flawer.penup()
+flawer.goto(190, 0)
 flawer.right(90)
 flawers()
 
