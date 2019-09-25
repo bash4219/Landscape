@@ -4,6 +4,7 @@ import turtle
 scn = turtle.Screen()
 geras = turtle.Turtle()
 geras2 = turtle.Turtle()
+flawer = turtle.Turtle()
 sky = turtle.Turtle()
 haws = turtle.Turtle()
 
@@ -28,9 +29,13 @@ def gera():
     geras2.goto(0, 0)
     geras.goto(0, 0)
 
+def flawers():
+    flawer.color("Black")
+    flawer.penup()
+    flawer.goto(-80, -80)
 
 gera()
-
+flawers()
 
 turtle.exitonclick()
 
