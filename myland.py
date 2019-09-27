@@ -188,9 +188,26 @@ def doers():
     dor.penup()
     dor.goto(0, 0)
 
+def sunray():
+    sun.color("yellow")
+    sun.penup()
+    sun.goto(-400, 200)
+    sun.pendown()
+    sun.begin_fill()
+    sun.circle(150)
+    sun.end_fill()
+    sun.right(-90)
+    sun.forward(150)
+    sun.pensize(8)
+    for i in range(36):
+        sun.right(10)
+        sun.forward(200)
+        sun.backward(200)
+
 
 
 skys()
+sunray()
 Haws()
 roofs()
 gera()
@@ -221,9 +238,12 @@ flawer.goto(90, -200)
 flawer.right(90)
 flawer.pendown()
 flawers()
+flawer.penup()
+flawer.goto(160, -200)
+flawer.right(90)
+flawer.pendown()
 flawers()
-flawers()
-flawers()
+
 
 
 
