@@ -11,6 +11,7 @@ sky2 = turtle.Turtle()
 haws = turtle.Turtle()
 roof = turtle.Turtle()
 dor = turtle.Turtle()
+sun = turtle.Turtle()
 
 
 geras.speed(.5)
@@ -22,6 +23,7 @@ haws.speed(.5)
 roof.speed(.5)
 sky.speed(.5)
 sky2.speed(.5)
+sun.speed(.5)
 
 
 def gera():
@@ -68,13 +70,6 @@ def skys():
 
 def flawers():
     flawer.color("Goldenrod")
-    flawer.penup()
-    flawer.right(90)
-    flawer.forward(90)
-    flawer.right(90)
-    flawer.forward(80)
-    flawer.right(180)
-    flawer.pendown()
     flawer.pensize(7)
     flawer.right(-90)
     flawer.forward(60)
@@ -199,11 +194,40 @@ skys()
 Haws()
 roofs()
 gera()
+flawer.goto(-90, -90)
 flawers()
 flawer.penup()
-flawer.goto(190, 0)
+flawer.goto(-190, -90)
 flawer.right(90)
+flawer.pendown()
 flawers()
+flawer.penup()
+flawer.goto(190, -90)
+flawer.right(90)
+flawer.pendown()
+flawers()
+flawer.penup()
+flawer.goto(-10, -90)
+flawer.right(90)
+flawer.pendown()
+flawers()
+flawer.penup()
+flawer.goto(90, -90)
+flawer.right(90)
+flawer.pendown()
+flawers()
+flawer.penup()
+flawer.goto(90, -200)
+flawer.right(90)
+flawer.pendown()
+flawers()
+flawers()
+flawers()
+flawers()
+
+
+
+
 doers()
 
 
